@@ -22,6 +22,14 @@ function dec(n) {
   return n -= 1
 }
 
+function makeInt(n) {
+  return parseInt(n)
+}
+
+function preserveDecimal(n) {
+  return parseFloat(n)
+}
+
 describe('makeInt(n)', function() {
   it('parses n as an integer and returns the parsed integer', function() {
     expect(makeInt(a.toString())).toEqual(a)
